@@ -1,0 +1,26 @@
+.bigText {
+    color: white;
+    font-size: 4em;
+}
+
+.location {
+    font-size: 0.6em;
+}
+
+body {
+    background-color: #2e3033;
+    margin-top: 10%;
+}
+
+#unitPickerF,
+#unitPickerC {
+    font-size: 0.8em;
+}
+
+.unit:hover {
+    cursor: pointer;
+}
+
+.darkSky {
+    color: white;
+}
