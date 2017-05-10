@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<!--
+  http://codepen.io/Critrate/pen/bWLYZQ
+  -->
+
+<head>
+    <title></title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+</head>
+
+<body class="bgcolor">
+    <h1 id="title">Survey Form</h1>
+    <div class="form">
+        <p class "title" id="description">Let us know how we can improve freeCodeCamp</p>
+        <form id="survey-form">
+
+            <div>
+                <div class="left">
+                    <label id="name-label" for="name"><span class="asterisk" >*</span> Name: </label>
+                </div>
+                <div class=right>
+                    <input type="text" name="name" value="" placeholder="Enter your name" id="name" required>
+                </div>
+            </div>
+
+            <div>
+                <div class="left">
+                    <label id="email-label" for="email"><span class="asterisk" >*</span> Email:</label>
+                </div>
+                <div class=right>
+                    <input type="email" name="email" value="" placeholder="Enter your Email" id="email" required>
+                </div>
+            </div>
+
+            <div>
+                <div class="left">
+                    <label id="number-label" for="age"><span class="asterisk" >*</span> Age:</label>
+                </div>
+                <div class="right">
+                    <input type="number" name="age" value="" placeholder="Age" id="number" min="0" max="99" required>
+                </div>
+            </div>
+
+            <div>
+                <div class="left">
+                    <p>Which option best describes your currnet role?</p>
+                </div>
+                <div class="right">
+                    <select id="dropdown">
+            <option value="" disabled selected>Select an option</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+            </select>
+                </div>
+            </div>
+
+            <div>
+                <div class="left">
+                    <p><span class="asterisk">*</span> How likely is that you would recommend freeCodeCamp to a friend?</p>
+                </div>
+                <div class="right">
+                    <label class="veritcal" for="def"><input type="radio" name="recommendation" value="1" id="def" required>Definitely</label>
+                    <label class="veritcal" for="maybe"><input type="radio" name="recommendation" value="2" id="maybe" required>Maybe</label>
+                    <label class="veritcal" for="not-sure"><input type="radio" name="recommendation" value="3" id="not-sure" required>Not sure</label>
+                </div>
+            </div>
+
+            <div>
+                <div class="left">
+                    <p>What do you like most in FCC:</p>
+                </div>
+                <div class=right>
+                    <select id="dropdown">
+                      <option value="" disabled selected>Select an option</option>
+                      <option value="challenges">Challenges</option>
+                      <option value="projects">Projects</option>
+                      <option value="community">Community</option>
+                      <option value="open-source">Open Source</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <div class="left">
+                    <p>Things that should be improved in the future (Check all that apply):</p>
+                </div>
+                <div class="right verical">
+                    <label class="veritcal" for=""><input type="checkbox" name="improve" value=""id="">Front-end Projects</label>
+                    <label class="veritcal" for=""><input type="checkbox" name="improve" value=""id="">Back-end Projects</label>
+                    <label class="veritcal" for=""><input type="checkbox" name="improve" value=""id="">Data Visualization</label>
+                    <label class="veritcal" for=""><input type="checkbox" name="improve" value=""id="">Challenges</label>
+                    <label class="veritcal" for=""><input type="checkbox" name="improve" value=""id="">Open Source Community</label>
+                    <label class="veritcal" for=""><input type="checkbox" name="improve" value=""id="">Gitter help rooms</label>
+                    <label class="veritcal" for=""><input type="checkbox" name="improve" value=""id="">Videos</label>
+                    <label class="veritcal" for=""><input type="checkbox" name="improve" value=""id="">City Meetups</label>
+                    <label class="veritcal" for=""><input type="checkbox" name="improve" value=""id="">Wiki</label>
+                    <label class="veritcal" for=""><input type="checkbox" name="improve" value=""id="">Forum</label>
+                    <label class="veritcal" for=""><input type="checkbox" name="improve" value=""id="">Additional Courses</label>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="left">
+                    <p>Any Comments or Suggestions?</p>
+                </div>
+                <div class="right">
+                    <textarea rows="4" cols="35" placeholder="Enter yout comment here..."></textarea>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
