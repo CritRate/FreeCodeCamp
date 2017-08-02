@@ -42,13 +42,12 @@ form input {
 .features {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     flex-direction: row;
-    margin: 0 25%;
+    margin: 0 25% 2em 25%;
     width: 50%;
 }
 
-#get-started {
+#buttons {
     background-color: #eabc3c;
     border-style: none;
     border-radius: 3px;
@@ -62,11 +61,45 @@ input {
 }
 
 #icon {
-    margin: auto;
     font-size: 3em;
     color: darkorange;
-    display: inline-block;
-    width: 16px;
-    margin-right: 3em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-width: 100px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.trombones {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 25% 2em 25%;
+    width: 50%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    min-width: 30%;
+}
+
+#name {
+    display: flex;
+    align-self: stretch;
+    background-color: lightgrey;
+}
+
+#name p {
+    display: flex;
+    margin: 1em auto;
 }
